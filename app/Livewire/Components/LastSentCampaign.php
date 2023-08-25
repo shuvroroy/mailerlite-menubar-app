@@ -4,10 +4,13 @@ namespace App\Livewire\Components;
 
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Session;
 use Livewire\Component;
 
 class LastSentCampaign extends Component
 {
+    public array $campaign = [];
+
     public function mount(): void
     {
         try {
@@ -15,8 +18,12 @@ class LastSentCampaign extends Component
                 ->get('/campaigns?filter[status]=sent&limit=1&sort=-created_at')
                 ->throw();
 
-            $response->json()['data'][0];
-        } catch (\Exception) {}
+            $this->campaign = $response->json()['data'][0];
+        } catch (\Exception) {
+            Session::remove('token');
+
+            $this->redirectRoute('authenticate');
+        }
     }
 
     public function render(): View

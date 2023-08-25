@@ -20,7 +20,7 @@
         >
             <div class="rounded-md bg-white dark:bg-gray-800 shadow-xs overflow-hidden py-1">
                 <a href="#" class="block p-2 text-xs text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Your Profile</a>
-                <a href="#" class="block p-2 text-xs text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Sign out</a>
+                <a href="#" wire:click="$dispatch('sign-out')" class="block p-2 text-xs text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600">Sign out</a>
             </div>
         </div>
     </div>

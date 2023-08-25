@@ -6,14 +6,16 @@
             <h2 class="mt-4 text-center text-xl font-bold leading-9 tracking-tight text-gray-900 dark:text-white">Sign in to your account using API Token</h2>
         </div>
 
-        <form class="space-y-6">
+        <form wire:submit="verify" class="space-y-6">
             <div>
                 <label for="token" class="block text-sm font-medium leading-6 text-gray-900 dark:text-white">API token</label>
                 <div class="mt-2">
-                    <textarea rows="4" id="token" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"></textarea>
+                    <textarea wire:model="token" rows="4" id="token" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6"></textarea>
                 </div>
 
-                <p class="mt-2 text-sm text-red-600">This token is invalid.</p>
+                @error('token')
+                    <p class="mt-2 text-sm text-red-600">{{ $message }}</p>
+                @enderror
             </div>
 
             <div>

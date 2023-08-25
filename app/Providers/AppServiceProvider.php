@@ -23,7 +23,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Http::macro('mailerlite', function () {
             return Http::withToken(Session::get('token'))
-                ->baseUrl('http://localhost:8080/api')
+                ->baseUrl('https://connect.mailerlite.com/api')
                 ->accept('application/json')
                 ->contentType('application/json');
         });
