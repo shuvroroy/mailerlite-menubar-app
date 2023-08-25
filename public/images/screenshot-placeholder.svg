@@ -1,0 +1,27 @@
+<svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="22" y="94" width="220" height="66" rx="3"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="220" height="66" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="0" y="0" width="196" height="68" rx="3"></rect>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="drag-and-drop-illustration" transform="translate(28.000000, 30.000000)">
+            <path d="M3,0 L261,0 C262.656854,-3.04359188e-16 264,1.34314575 264,3 L264,290 L264,290 L0,290 L0,3 C-2.02906125e-16,1.34314575 1.34314575,3.04359188e-16 3,0 Z" id="Rectangle-4" fill-opacity="0.1" fill="#888888"></path>
+            <path d="M36,106 L228,106 C229.104569,106 230,106.895431 230,108 L230,146 C230,147.104569 229.104569,148 228,148 L36,148 C34.8954305,148 34,147.104569 34,146 L34,108 C34,106.895431 34.8954305,106 36,106 Z" id="Rectangle-16" fill-opacity="0.1" fill="#888888"></path>
+            <use id="Rectangle-16" stroke-opacity="0.4" stroke="#888888" mask="url(#mask-2)" stroke-width="4" stroke-dasharray="5,4" xlink:href="#path-1"></use>
+            <rect id="Rectangle-10" fill-opacity="0.5" fill="#888888" x="100" y="28" width="64" height="4" rx="2"></rect>
+            <rect id="Rectangle-10" fill-opacity="0.3" fill="#888888" x="57" y="50" width="150" height="4" rx="2"></rect>
+            <rect id="Rectangle-10-Copy" fill-opacity="0.3" fill="#888888" x="83" y="62" width="98" height="4" rx="2"></rect>
+            <g id="Group" transform="translate(34.000000, 176.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="Mask" fill-opacity="0.15" fill="#888888" xlink:href="#path-3"></use>
+                <polygon id="Path-6" fill-opacity="0.3" fill="#888888" mask="url(#mask-4)" points="0 62.2305654 49.8197392 37.3272 94.6418272 62.2305654 150.422251 21 196 62.2305654 196 73.4900312 0 73.4900312"></polygon>
+                <circle id="Oval-4" fill-opacity="0.3" fill="#888888" mask="url(#mask-4)" cx="98.1311475" cy="23.6721311" r="6.39344262"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

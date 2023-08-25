@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,6 +21,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Http::macro('mailerlite', function () {
+            return Http::withToken(Session::get('token'))
+                ->baseUrl('http://localhost:8080/api')
+                ->accept('application/json')
+                ->contentType('application/json');
+        });
     }
 }
